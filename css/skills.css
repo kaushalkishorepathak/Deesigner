@@ -1,0 +1,103 @@
+/* Make all cards same width */
+#portfolio .card {
+  width: 340px;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+#portfolio .card:hover {
+  transform: translateY(-6px);
+}
+
+/* Section background */
+.portfolio-section {
+  padding: 60px 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Grid system */
+.portfolio-grid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+/* Card style */
+.portfolio-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image style - main part */
+.portfolio-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain; /* FULL image visible */
+  background: #f1f1f1; /* Light background like your screenshot */
+  padding: 20px;
+  border-radius: 14px;
+}
+
+/* Caption */
+.caption {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Make all images equal height and clean */
+#portfolio .card-img-top {
+  height: 430px; /* screenshot match */
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 2px solid #eee;
+}
+
+/* Card text center */
+#portfolio .card-body {
+  padding: 12px 10px;
+}
+
+#portfolio .card-text {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Center cards in a row like screenshot */
+#portfolio .row {
+  justify-content: center !important;
+  gap: 30px; /* spacing like screenshot */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #portfolio .card-img-top {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #portfolio .card-img-top {
+    height: 240px;
+  }
+}
